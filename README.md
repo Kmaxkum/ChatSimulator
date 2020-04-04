@@ -7,20 +7,20 @@
 
 ## Система сборки
 
-Используется система сборки **CMake** не ниже версии **3.1.0**. В зависимости от ваших настроек, вам может потребоваться указать CMake, где найти Qt. Это можно сделать, добавив `-DCMAKE_PREFIX_PATH="path/to/Qt5/lib/cmake"` в поле ввода аргументов в мастере CMake.
+Используется система сборки **CMake** не ниже версии **3.1.0**. В зависимости от ваших настроек, вам может потребоваться указать CMake, где найти Qt. Это можно сделать, добавив `-DCMAKE_PREFIX_PATH="path\to\Qt5\"Qt5 version"\"compiler"\lib\cmake"` в поле ввода аргументов в мастере CMake.
 
 ## Пример сборки проекта для Visual Studio
 
 Командная строка CMake, Visual Studio 2017, Qt 5.14.1, 64-битная версия: Запустите cmd, затем выполните CMake в каталоге сборки для генерации системы сборки:
 
 ```
->cmake -DCMAKE_PREFIX_PATH="path/to/Qt5/lib/cmake" -G"Visual Studio 15 2017 Win64" path/to/source
+>cmake -DCMAKE_PREFIX_PATH="path\to\Qt5\5.14.1\msvc2017_64\lib\cmake" -A x64 -G"Visual Studio 15 2017 Win64" path\to\source
 ```
 
 Для вызова сборки нужно выполнить команду:
 
 ```
->cmake --build path/to/build --config <cfg>
+>cmake --build path\to\build --config <cfg>
 ```
 
 Где `<cfg>` - `Release` или `Debug`.
