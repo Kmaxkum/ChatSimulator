@@ -1,10 +1,12 @@
 #include "users_storage.h"
 
+#inlcude <iterator>
+
 namespace ChatSimulator {
 
 UsersStorage::ConstItUser UsersStorage::CheckUserId(const std::int64_t user_id) const {
   auto it = users_.find(user_id);
-  if (it != cend(users_)) {
+  if (it != end(users_)) {
     return it;
   }
   throw QString(u8"Invalid user id");

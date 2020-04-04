@@ -1,7 +1,5 @@
 #include "user.h"
 
-#include "chat_view.h"
-
 namespace ChatSimulator {
 
 User::User(const std::int64_t id, const QString& name, QObject* parent)

@@ -6,10 +6,9 @@
 
 #include <QObject>
 #include <QString>
+#include "chat_view.h"
 
 namespace ChatSimulator {
-
-class ChatView;
 
 class User : public QObject {
   Q_OBJECT

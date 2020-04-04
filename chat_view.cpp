@@ -5,7 +5,7 @@
 namespace ChatSimulator {
 
 ChatView::ChatView(const User* const user, QWidget* parent)
-    : QWidget(parent), ui_(new Ui::ChatView) {
+    : QWidget(parent), ui_(new Ui::ChatView()) {
   ui_->setupUi(this);
 
   this->setWindowTitle(
